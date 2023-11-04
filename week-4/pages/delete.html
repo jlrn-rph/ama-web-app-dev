@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>☕ Coffee Shop</title>
+    <link rel="stylesheet" href="../css/styles.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1> ☕ Delete Coffee Order</h1>
+        <form method="POST" action="../orders/delete.php">
+            <label for="order_id">Order ID:</label>
+            <input type="text" id="order_id" name="order_id" required>
+
+            <button type="submit">Delete Order</button>
+        </form>
+
+        <br />
+
+        <form action="index.html">
+            <button type="submit">Back to Main Menu</button>
+        </form>
+    </div>
+
+</body>
+
+</html>
