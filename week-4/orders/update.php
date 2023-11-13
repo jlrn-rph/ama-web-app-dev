@@ -57,7 +57,7 @@
                     $coffeeType = isset($_POST["coffee"]) && $_POST["coffee"] !== "" ? $_POST["coffee"] : $result['coffee_type'];
                     $size = isset($_POST["size"]) && $_POST["size"] !== "" ? $_POST["size"] : $result['size'];
                     $extras = isset($_POST["extras"]) && is_array($_POST["extras"]) ? $_POST["extras"] : explode(", ", $result['extras']);
-                    $instructions = isset($_POST["instructions"]) ? $_POST["instructions"] : $result['instructions'];
+                    $instructions = isset($_POST["instructions"])  && $_POST["instructions"] !== "" ? $_POST["instructions"] : $result['instructions'];
 
                     // Calculate the total price
                     $total_price = calculateTotalPrice($coffee_prices, $size_prices, $extras_prices, $coffeeType, $size, $extras);
